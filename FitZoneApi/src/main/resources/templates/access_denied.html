@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Denied</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<header xmlns:th="http://www.thymeleaf.org">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!--            th:src="@{../static/fzlogosmall.jpg}"-->
+            <a href="/" class="navbar-brand zoll"><img th:src="@{images/fzlogosmall.jpg}"/></a>
+            <a class="navbar-brand zoll" href="/"><b>FitZoneAdmin</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/exercises"><b>Exercises</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/users"><b>Users</b></a>
+                    </li>
+                </ul>
+                <form class="d-flex" sec:authorize="isAuthenticated()">
+                    <a class="btn btn-outline-secondary">
+                        <th:block th:if="${#request.getRemoteUser() != null}"
+                                  th:text="${#request.getRemoteUser()}"></th:block>
+                    </a>&nbsp; &nbsp;
+                    <a class="btn btn-outline-danger" href="/logout">
+                        <th:block th:if="${#request.getRemoteUser() != null}"
+                                  th:text="Logout"></th:block>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-2 text-center">
+            <p><i class="fa fa-exclamation-triangle fa-5x"></i><br/> <b>Status Code: 403 </b></p>
+        </div>
+        <div class="col-md-10">
+            <p>Sorry, your access is denied.<br/>
+                You need <b>admin</b> permissions to enter this page. <br/>
+                Please go back to the previous page to continue browsing.</p>
+            <a class="btn btn-danger" href="javascript:history.back()">Go Back</a>
+        </div>
+    </div>
+</div>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"></a></li>
+    </ul>
+    <p class="text-center text-danger">© 2023 FitZone, Inc</p>
+</footer>
+</body>
+</html>

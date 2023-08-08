@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.zoll {
+    font-weight: bold;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #e8ff2c;
+
+
+    background: -webkit-linear-gradient(to right, rgba(16, 7, 103, 10), rgba(17, 87, 52, 10));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+}
+
+.yogga {
+    font-weight: bold;
+}
+
+.bg-image1 {
+    height: 50vh;
+}
+
+.bg-image2 {
+    height: 50vh;
+}
+
+.aboutpage {
+    font-family: "Arial";
+}
