@@ -8,10 +8,10 @@ Users can update and track their fitness routine in an intuitive web UI.
 For more details, check the documentation
 
 
-FitZone
+**FitZone**
 ![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/ead6c9c5-6440-4d56-87c0-256979d6abca)
 
-FitZoneAdmin
+**FitZoneAdmin**
 ![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/f67c03e9-2fac-4183-9db2-b8970e5c0607)
 
 
