@@ -9,11 +9,16 @@ For more details, check the documentation.
 
 
 **FitZone Home Page**
-![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/354d3101-13e0-4007-a451-a113e2fb92e9)
+![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/8d0ca959-76ad-48bd-b9ae-ece7b85d7514)
+
 
 
 **FitZoneAdmin Home Page**
 ![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/f67c03e9-2fac-4183-9db2-b8970e5c0607)
+
+**FitZone Powerlifting Menu**
+![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/b369f4ad-ef57-4010-a9f0-7fd3f2eb5a51)![image](https://github.com/mihailspirkoski/Diploma-Thesis---FitZone/assets/74495955/9088311d-5940-430e-a358-ffe6bbbc84b3)
+
 
 
 
