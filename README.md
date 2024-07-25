@@ -1,5 +1,5 @@
 # Diploma-Thesis---FitZone
-Bachelor's Degree Project - Fitness Application using Java Spring Boot as backend, ReactJS as frontend technology and a PostgreSQL database
+Bachelor's Degree Project - Fitness Application using Java Spring Boot as backend, ReactJS as frontend technology and a PostgreSQL database, with Thymeleaf and Bootstrap being used in the Admin application
 
 **__Description__**
 
